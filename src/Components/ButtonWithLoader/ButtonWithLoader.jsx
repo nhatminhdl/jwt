@@ -8,7 +8,7 @@ const ButtonWithLoader = ({text, onPress, isLoading,}) => {
       <TouchableOpacity onPress={onPress} style={styles.btnStyle}>
       
         
-        {!isLoading  ? <ActivityIndicator size={'large'} color={'#fff'}/> :  <Text style={styles.textStyle}>{text}</Text>}
+        {!!isLoading  ? <ActivityIndicator size={'large'} color={'#fff'}/> :  <Text style={styles.textStyle}>{text}</Text>}
         </TouchableOpacity>
     </View>
   )

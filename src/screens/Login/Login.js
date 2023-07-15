@@ -46,7 +46,7 @@ const Login = ({navigation}) => {
           "TypeCompany": "c200"
         })
         
-        console.log('res ====>', res.token);
+        // console.log('res ====>', res.token);
         updateState({isLoading: false})
       } catch (error) {
         console.log('error raised');

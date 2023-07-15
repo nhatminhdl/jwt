@@ -1,11 +1,14 @@
-import {Home, Profile} from '../index';
+
 import React from 'react';
+import TabRoutes from './TabRoutes';
 
 function MainStack(Stack){
     return (
         <>
-            <Stack.Screen name='Home' component={Home}/>
-            <Stack.Screen name='Profile' component={Profile}/>
+            <Stack.Screen
+                name= 'Home'
+                component={TabRoutes}
+            />
         </>
     )
 }
